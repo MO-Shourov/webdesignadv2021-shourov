@@ -1,0 +1,123 @@
+:root {
+  /* put var */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+body  {
+  background: white;
+}
+header {
+  padding: 1rem;
+  text-align: center;
+}
+nav {
+  background: #000000;
+  color: #ffffff;
+}
+nav ul {
+list-style-type: none;
+}
+nav li {
+  display: inline-block;
+}
+nav li a {
+  display: inline-block;
+  color: #fdfdfd;
+  text-decoration: none;
+  padding: 2vh 4vh;
+  border-right: 1px solid rgba(211, 211, 211, .4);
+  transition: background-color .25s ease-in;
+}
+nav li a:hover {
+  text-decoration: none ;
+  background-color: rgba(211, 211, 211, .4);
+  color: #d8fff3;
+}
+footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 1rem;
+  min-height: 10vh;
+}
+.container {
+  background: #d8fff3;
+  padding: 1rem;
+  width: 80%;
+  min-width: 60vh;
+  margin: auto;
+}
+.section-header {
+  padding: 1.25rem;
+  font-size: 1.75rem;
+  border-bottom: 1px #000000 solid;
+}
+.section-container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  padding: 1.25rem;
+}
+.section-item {
+  flex: 0 0 30%;
+  border: 1px #000000 solid;
+  border-radius: 12px;
+  text-align: center;
+  background: #ffd8ff;
+  box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
+}
+.section-item:hover {
+  border: 3px #ffd8d8;
+  box-shadow: 12px 8px 8px 0px rgba(0, 0, 0, 0.25);
+  background: #d8dcff;
+}
+.section-item a:hover {
+  color: #000;
+  text-emphasis: none;
+  text-decoration: none;
+}
+.section-item a {
+  color: #000;
+  text-emphasis: none;
+  text-decoration: none;
+}
+.section-icon{
+  padding: 1rem;
+}
+.section-icon i {
+  font-size: 20vh;
+}
+.section-item h4 {
+  background-color: #d8dcff;
+  padding: 1rem;
+  font-size: 1.75rem;
+}
+.section-item h4:hover {
+  background-color: #ffd8f2;
+  padding: 1rem;
+  font-size: 1.75rem;
+}
+.section-item p {
+  padding: 1rem;
+  font-size: 1.15rem;
+  line-height: 2rem;
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    background-color: #d8fff3;
+    color: #000000;
+    width: 100%;
+  }
+  .section-container {
+    flex-direction: column;
+    justify-content: center;
+  }
+  .section-item {
+    flex-basis: auto;
+  }
+}
