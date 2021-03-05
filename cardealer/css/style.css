@@ -1,0 +1,50 @@
+:root {
+  /* put var */
+  --main-color:#edeef0;
+  --accent-1:#246aac;
+  --accent-2: #21b9f4;
+  --accent-3: #406888;
+  --accent-4: #1c345d ;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+body  {
+  background: var(--main-color);
+}
+header {
+  padding: 1rem;
+  text-align: center;
+}
+nav {
+  background: var(--accent-3);
+  color: var(--accent-2);
+}
+nav ul {
+list-style-type: none;
+}
+nav li {
+  display: inline-block;
+}
+nav li a {
+  display: inline-block;
+  color: var(--accent-2);
+  text-decoration: none;
+  padding: 2vh 4vh;
+  border-right: 1px solid rgba(211, 211, 211, .4);
+  transition: background-color .25s ease-in;
+}
+nav li a:hover {
+  text-decoration: none ;
+  background-color: rgba(211, 211, 211, .4);
+  color: var(--main-color);
+}
+footer {
+  background: var(--accent-3);
+  color: #ffffff;
+  padding: 1rem;
+  min-height: 10vh;
+}

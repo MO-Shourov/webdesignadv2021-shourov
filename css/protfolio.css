@@ -1,34 +1,41 @@
 :root {
   /* put var */
-  --main-color:#edeef0;
-  --accent-1:#246aac;
+  --main-color: #edeef0;
+  --accent-1: #246aac;
   --accent-2: #21b9f4;
   --accent-3: #406888;
-  --accent-4: #1c345d ;
+  --accent-4: #1c345d;
 }
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: 'Yanone Kaffeesatz', sans-serif;
 }
-body  {
+
+body {
   background: var(--main-color);
 }
+
 header {
   padding: 1rem;
   text-align: center;
 }
+
 nav {
   background: var(--accent-3);
   color: var(--accent-2);
 }
+
 nav ul {
-list-style-type: none;
+  list-style-type: none;
 }
+
 nav li {
   display: inline-block;
 }
+
 nav li a {
   display: inline-block;
   color: var(--accent-2);
@@ -37,17 +44,20 @@ nav li a {
   border-right: 1px solid rgba(211, 211, 211, .4);
   transition: background-color .25s ease-in;
 }
+
 nav li a:hover {
-  text-decoration: none ;
+  text-decoration: none;
   background-color: rgba(211, 211, 211, .4);
   color: var(--main-color);
 }
+
 footer {
   background: var(--accent-3);
   color: #ffffff;
   padding: 1rem;
   min-height: 10vh;
 }
+
 .container {
   background: var(--accent-2);
   padding: 1rem;
@@ -55,11 +65,13 @@ footer {
   min-width: 60vh;
   margin: auto;
 }
+
 .section-header {
   padding: 1.25rem;
   font-size: 1.75rem;
   border-bottom: 1px #000000 solid;
 }
+
 .section-container {
   display: flex;
   flex-direction: row;
@@ -67,7 +79,9 @@ footer {
   justify-content: flex-start;
   align-items: stretch;
   padding: 1.25rem;
+  justify-content: space-evenly;
 }
+
 .section-item {
   flex: 0 0 30%;
   border: 3px var(--accent-4) solid;
@@ -76,42 +90,51 @@ footer {
   background: var(--main-color);
   box-shadow: 10px 5px 5px 0px rgba(0, 0, 0, 0.25);
 }
+
 .section-item:hover {
   border: 1px var(--main-color) solid;
   box-shadow: 12px 8px 8px 0px rgba(0, 0, 0, 0.25);
   background: var(--accent-3);
 }
+
 .section-item a:hover {
   color: #000;
   text-emphasis: none;
   text-decoration: none;
 }
+
 .section-item a {
   color: #000;
   text-emphasis: none;
   text-decoration: none;
 }
-.section-icon{
+
+.section-icon {
   padding: 1rem;
 }
+
 .section-icon i {
   font-size: 20vh;
 }
+
 .section-item h4 {
   background-color: var(--accent-2);
   padding: 1rem;
   font-size: 1.75rem;
 }
+
 .section-item h4:hover {
   background-color: var(--accent-2);
   padding: 1rem;
   font-size: 1.75rem;
 }
+
 .section-item p {
   padding: 1rem;
   font-size: 1.15rem;
   line-height: 2rem;
 }
+
 /* About me page css */
 .row {
   display: flex;
@@ -120,29 +143,35 @@ footer {
   justify-content: stretch;
   margin: 2vh auto;
 }
+
 .media {
   flex: 0 0 40%;
 }
+
 .media img {
   display: block;
   width: 92%;
   max-width: 400px;
   margin: auto;
 }
+
 .text {
   flex: 0 0 60%;
   padding: 3vh;
   text-align: center;
 }
+
 .text h3 {
   font-size: 3rem;
   padding: 1vh 0;
 }
+
 .text p {
   font-size: 1.5rem;
   line-height: 2.25rem;
   padding: 2vh 0;
 }
+
 .row-button {
   background: var(--accent-4);
   color: #fff;
@@ -156,11 +185,13 @@ footer {
   border-radius: 8px;
   transition: background-color .5 ease;
 }
+
 .row-button:hover {
   background: var(--accent-1);
   color: #fff;
   box-shadow: 3px 11px 10px -1px rgba(100, 100, 100, 0.69);
 }
+
 /* contact page */
 .contact {
   flex: 0 0 60%;
@@ -170,6 +201,7 @@ footer {
   align-items: flex-start;
   padding-left: 2rem;
 }
+
 .contact-item {
   padding: 1.15rem;
   font-size: 1.75rem;
@@ -179,40 +211,51 @@ footer {
   border-radius: 8px;
   transition: all .5s ease;
 }
+
 .contact-item a {
   display: block;
   color: #000;
   padding: 1.5rem;
   text-decoration: none;
 }
+
 .contact-item i {
   font-size: 6rem;
   color: var(--accent-4);
 }
+
 .contact-item:hover {
   background-color: #d8dcff;
 }
+
 .contact-item a:hover::before {
   content: " -->  ";
   color: #000;
 }
+
 /* general */
 a {
   text-decoration: none;
 }
+
 a:hover {
   text-decoration: none;
 }
+
 @media only screen and (max-width: 800px) {
   .container {
     background-color: #d8fff3;
     color: #000000;
     width: 100%;
   }
+
   .section-container {
     flex-direction: column;
     justify-content: center;
+    /* justify-content: space-between; */
+
   }
+
   .section-item {
     flex-basis: auto;
   }
