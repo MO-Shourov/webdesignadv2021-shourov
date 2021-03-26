@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- CSS Will go under Here in STYLE Tags -->
+    <style>
+      :root {
+        /* Put Variables Here */
+      }
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background: white;
+      }
+      header {
+        padding: 1vh;
+        text-align: center;
+      }
+      nav {
+        background-color: black;
+        color: white;
+      }
+      footer {
+        background-color: black;
+        color: white;
+        padding: 2vh;
+        min-height: 10vh;
+      }
+      .container {
+        background-color: beige;
+        padding: 1vh;
+        min-height: 60vh;
+        width: 80%;
+        margin: auto;
+      }
+      .container div {
+        background: white;
+        outline: 1px lightgrey solid;
+        padding: 2vh;
+      }
+      .even-columns,
+      .grid-ish,
+      .content-sidebar {
+        width: 90%;
+        margin: 3vh auto;
+      }
+      .even-columns {
+        display: flex;
+        gap: 1em;
+      }
+      .even-columns > * {
+        flex-basis: 100%;
+      }
+      .grid-ish {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;  
+      }
+      .grid-ish > * {
+        flex: 1 1 333%;
+      }
+      .content-sidebar {
+        display: flex;
+        gap: 1em;
+        flex-wrap: wrap;
+      }
+      .container-sidebar > *:nth-child(1) {
+        flex: 1 1 70%;
+        min-width: 25ch;
+      }
+      .container-sidebar > *:nth-child(2) {
+        flex: 1 1 25%;
+        min-width: 15ch;
+      }
+      /* Write the video css under here */
+
+      @media only screen and (max-width: 800px) {
+        .container {
+          width: 100%;
+          margin: auto;
+        }
+      }
+    </style>
+    <!-- Put the Link Tags Here -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>My Page Title</title>
+  </head>
+  <body>
+    <header>header</header>
+    <nav>Placeholder</nav>
+    <div class="container">
+      <!-- Put assignment specific code here -->
+
+      <div class="even-columns">
+        <div>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Expedita commodi quos dolorem hic quis quae!</div>
+        <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, non! Vitae labore laboriosam provident dolores dolorem sed aliquid fuga doloremque sunt culpa laudantium nihil nemo itaque, rerum tempora eligendi fugiat ut dignissimos voluptate exercitationem optio veritatis praesentium. Obcaecati earum ab repellendus provident omnis, eligendi, vitae neque pariatur, doloremque voluptatibus consequuntur.</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nulla quibusdam, voluptas incidunt impedit, eum earum, nihil sapiente blanditiis consectetur facilis voluptates aspernatur rem quod vitae?</div>
+      </div>
+
+      <div class="grid-ish">
+        <div>c1</div>
+        <div>c2</div>
+        <div>c3</div>
+      </div>
+
+      <div class="content-sidebar">
+        <div>c1</div>
+        <div>c2</div>
+      </div>
+    </div>
+    <!-- End of the container -->
+    <footer>Made in FHS Web Design</footer>
+
+    <!-- Don't delete me please, but copy me...-->
+  </body>
+</html>
