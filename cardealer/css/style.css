@@ -378,3 +378,85 @@ footer {
   /* background-color: #BEC0C6 ; */
   padding: 5px;
 }
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ */
+@media only screen and (max-width:800px) {
+  .button-next {
+    display: flex;
+    height: 100px;
+    margin: auto;
+    padding: auto;
+  }
+  .container {
+    width: 100%;
+    margin: auto;
+  }
+  header, footer {
+    text-align: center;
+  }
+  nav li {
+    display: block;
+    text-align: center;
+  }
+  nav li a {
+    display: inline-block;
+    color: var(--small);
+    text-decoration: none;
+    padding: 2vh 4vw;
+    font-size: 1.5rem;
+    border-right: none;
+    transition: background-color .25s ease-in;
+  }
+  .row{
+    flex-direction: column;
+    text-align: center;
+  }
+  .row-dark {
+    flex-direction: column-reverse;
+    padding: 2vh;
+  }
+  .car-container {
+    flex-direction: column;
+  }
+  .car-item {
+    width: 100%;
+    text-align: center;
+  }
+  .car-image img {
+    width: 100%;
+  }
+  .car-section-header {
+    text-align: center;
+  }
+  .deals-container {
+    flex-flow: column wrap;
+  }
+  .deals-item:hover .deals-overlay {
+    width: 100%;
+  }
+  .deals-overlay .cta-button {
+    width: 60%;
+    padding: 2vh;
+    font-size: 1.25rem;
+  }
+  .team-container {
+    flex-flow: column wrap;
+  }
+  .grid-item {
+    text-align: center;
+    flex: 0 0 100%;
+    grid-template-rows: auto 45vh auto;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "name"
+    "pic"
+    "title"
+    "bio"
+    ;
+  }
+  .grid-image {
+    padding: 2vh;
+  }
+  .grid-image img {
+    height: 100%;
+  }
+}
