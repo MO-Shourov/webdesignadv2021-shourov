@@ -84,6 +84,7 @@ footer {
 }
 
 .section-item {
+  margin-top: 15px;
   flex: 0 0 30%;
   border: 3px var(--accent-4) solid;
   border-radius: 12px;

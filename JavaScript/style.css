@@ -1,0 +1,111 @@
+:root {
+  /* put var */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: #fdfdfd;
+}
+header {
+  padding: 1vh;
+  text-align: center;
+}
+nav {
+  background: #000000;
+  color: #ffffff;
+}
+footer {
+  background: #000000;
+  color: #ffffff;
+  padding: 2vh;
+  min-height: 10vh;
+}
+.container {
+  background: #f5fbff;
+  padding: 1vh;
+  width: 80%;
+  min-width: 60vh;
+  margin: auto;
+}
+/* New CSS --- Cards */
+.pageHeader {
+  text-align: center;
+  padding: 2vh;
+}
+.card-container {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 1vw;
+  padding: 1vw;
+}
+.card-container > * {
+  width: 100%;
+  text-align: center;
+  font-size: 1.25rem;
+}
+.card {
+  border: 1px solid black;
+  border-radius:  12px;
+  overflow: hidden;
+}
+.card-body {
+  min-height: 25vh;
+  background-color: #fff;
+  padding: 2vh;
+}
+.card-title {
+  margin: 0;
+  background-color: #ae44b8;
+  color:#fff;
+  font-size: 1.5rem;
+  padding: 2.5vh;
+}
+
+.button-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  gap: 1vw;
+  padding: 1vw;
+  border-top: 3px black dotted;
+  margin:  5vh;
+}
+.button-container > * {
+  flex-basis: 33.333%;
+  max-width: 20vw;
+  font-size: 1.25rem;
+  padding: 2vh;
+  border-radius: 12px;
+}
+.button-container button {
+  background: #5cb85c;
+  color: #fff;
+}
+.button-container button:hover {
+  cursor: pointer;
+  background: rgb(0, 194, 253);
+  box-shadow: 7px 6px 5px 0px rgba(0, 0, 0, 0.42);
+}
+.hidden{
+  display: none;
+}
+.show {
+  display: block;
+}
+@media only screen and (max-width: 800px) {
+  .container {
+    background-color: #a8a8a8;
+    color: #000000;
+    width: 100%;
+    margin: auto;
+  }
+  .card-container {
+    flex-flow: column nowrap;
+  }
+}
+.clicktoChange{
+  text-align: center;
+}

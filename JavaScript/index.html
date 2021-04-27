@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Intro</title>
+  </head>
+  <body>
+    <header>Header</header>
+    <nav>NavBar</nav>
+    <div class="container" id="container">
+      <h1 class="pageHeader" id="pageHeader">Intro to JavaScript</h1>
+      <!-- --------------------------------------------------------- Start of a container --------------------------------------------------------- -->
+      <div class="card-container" id="card-container">
+        <!-- Start of a card -->
+        <div class="card" id="card1">
+          <div class="card-body">
+            <p>Gereric card text</p>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Card #1 Title</h3>
+          </div>
+        </div>
+        <!-- End of a card -->
+        <!-- Start of a card -->
+        <div class="card" id="card2">
+          <div class="card-body">
+            <p>Gereric card text</p>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Card #1 Title</h3>
+          </div>
+        </div>
+        <!-- End of a card -->
+        <!-- Start of a card -->
+        <div class="card" id="card3">
+          <div class="card-body">
+            <p>Gereric card text</p>
+          </div>
+          <div class="card-footer">
+            <h3 class="card-title">Card #1 Title</h3>
+          </div>
+        </div>
+        <!-- End of a card -->
+      </div>
+      <h2 class="clicktoChange">Click to Change</h2>
+      <div class="button-container">
+        <button onclick="changeBody()"> Body</button>
+        <button onclick="changeTitle()"> Text</button>
+        <button onclick="darkContainer()">Container</button>
+
+        <button onclick="changeBorder()"> Border</button>
+        <button onclick="changeCardTitles()">Card Titles</button>
+        <button onclick="changeCardBody()">Card Body</button>
+
+        <button onclick="changeCard(0)">Click Card 1</button>
+        <button onclick="changeCard(1)">Click Card 2</button>
+        <button onclick="changeCard(2)">Click Card 3</button>
+
+        <button onclick="hideOneCard(0)">Hide Card 1</button>
+        <button onclick="hideOneCard(1)">Hide Card 2</button>
+        <button onclick="hideOneCard(2)">Hide Card 3</button>
+
+        <button onclick="showOneCard(0)">Show Card 1</button>
+        <button onclick="showOneCard(1)">Show Card 2</button>
+        <button onclick="showOneCard(2)">Show Card 3</button>
+
+        <button onclick="hideAllCard()">Hide All Card</button>
+        <button onclick="showAllCard()">Show All Card</button>
+      </div>
+      <!-- --------------------------------------------------------- End of a container --------------------------------------------------------- -->
+    </div>
+    <script src="main.js"></script>
+    <footer>Footer</footer>
+  </body>
+</html>
