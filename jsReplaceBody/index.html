@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript Intro</title>
+  </head>
+  <body>
+    <header>Header</header>
+    <nav>NavBar</nav>
+    <div class="container" id="container">
+      <!-- --------------------------------------------------------- Start of a container --------------------------------------------------------- -->
+      <div class="pageContent">
+        <div class="left">
+          <a href="#" onclick="swapContent(1)">Page 1</a>
+          <a href="#" onclick="swapContent(2)">Page 1</a>
+          <a href="#" onclick="">Menu Item</a>
+          <a href="#" onclick="">Menu Item</a>
+          <a href="#" onclick="">Menu Item</a>
+        </div>
+        <div class="right">
+          <div class="content" id="content1">
+            <h2>Content Box #1</h2>
+            <div class="card">
+              <div class="card-image">
+                <img src="https://media.istockphoto.com/photos/colorful-panoramic-mountain-view-at-sunrise-picture-id1129473522?k=6&m=1129473522&s=612x612&w=0&h=qWamgIiqOoQXs3aDZm7U3rxzuOlN9lXNIxyq6QskPaE=" alt="#">
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quidem velit neque, animi voluptatem esse corporis laudantium harum, dignissimos magni doloremque sit corrupti dicta ipsum!
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-image">
+                <img src="https://media.istockphoto.com/photos/colorful-panoramic-mountain-view-at-sunrise-picture-id1129473522?k=6&m=1129473522&s=612x612&w=0&h=qWamgIiqOoQXs3aDZm7U3rxzuOlN9lXNIxyq6QskPaE=" alt="#">
+              </div>
+              <div class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quidem velit neque, animi voluptatem esse corporis laudantium harum, dignissimos magni doloremque sit corrupti dicta ipsum!
+              </div>
+            </div>
+          </div>
+          <div class="content hidden" id="content2">
+            <h2>Content Box #2</h2>
+            <div class="card">
+              <div class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quidem velit neque, animi voluptatem esse corporis laudantium harum, dignissimos magni doloremque sit corrupti dicta ipsum!
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-text">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Id quidem velit neque, animi voluptatem esse corporis laudantium harum, dignissimos magni doloremque sit corrupti dicta ipsum!
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------- End of a container --------------------------------------------------------- -->
+    </div>
+    <script src="main.js"></script>
+    <footer>Footer</footer>
+  </body>
+</html>
