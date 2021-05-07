@@ -1,0 +1,88 @@
+:root {
+  --mainColor:#1C1E21;
+  --containerColor:#42454C;
+  --accentColorDark: #005566;
+  --accentColorLight: #9CD5DF;
+  --lightText: #fdfdfd;
+  --darkText: #010010;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: var(--mainColor);
+}
+header {
+  color: var(--lightText);
+  padding: 1vh;
+  text-align: center;
+  background: var(--accentColorDark);
+}
+nav {
+  background: var(--accentColorLight);
+  color: var(--darkText);
+  padding: 20px;
+}
+footer {
+  text-align: center;
+  background: var(--accentColorDark);
+  color: #ffffff;
+  padding: 4vh;
+  min-height: 10vh;
+}
+.container {
+  background: var(--containerColor);
+  padding: 5vh 10vh;
+  width: 95%;
+  min-height: 80vh;
+  margin: auto;
+}
+.carousel {
+  width: 80%;
+  margin: auto;
+  background-color: #707d91;
+}
+.carousel-image {
+  position: relative;
+  width: 100%;
+  height: 60vh;
+  overflow: hidden;
+}
+.carousel-image img {
+  display: block;
+  width:  100%;
+}
+.carousel-overlay {
+  position: absolute;
+  width: 100%;
+  height: 10vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  right: 0;
+  left: 0;
+  bottom: 0;
+  color: #fdfdfd;
+}
+.carousel-overlay h3 {
+  text-align: center;
+}
+.carousel-overlay {
+  text-align: start;
+}
+.carousel-buttons {
+  height: 7vh;
+  background:  rgba(119, 47, 202, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 55vw;
+}
+.carousel-buttons > * {
+  font-size: 7vh;
+  text-align: center;
+}
+.Left-10:hover {
+  cursor: pointer;
+  color: #fdfdfd;
+}

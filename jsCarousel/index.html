@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css" integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous"/>
+    <title>JavaScript Intro</title>
+  </head>
+  <body>
+    <header>
+      <h3>Header</h3>
+    </header>
+    <nav>
+      <h1>JavaScript: Carousel</h1>
+    </nav>
+    <div class="container" id="container">
+      <!-- --------------------------------------------------------- Start of a container --------------------------------------------------------- -->
+      <div class="carousel">
+        <div class="carousel-image">
+          <img id="theImage" src="#" alt="#" title="" data-showing="0">
+          <div class="carousel-overlay">
+            <h3 id="carousel-title">Title</h3>
+            <p id="carousel-text">
+              Text
+            </p>
+          </div>
+        </div>
+        <div class="carousel-buttons">
+          <i class="fas fa-angle-double-left Left-10" onclick="lastImage()"></i>
+          <i class="fas fa-angle-double-right Left-10" onclick="nextImage()"></i>
+        </div>
+      </div>
+      <!-- --------------------------------------------------------- End of a container --------------------------------------------------------- -->
+    </div>
+    <script src="main.js"></script>
+    <footer>
+      <h4>JavaScript Part 4 <span>By</span> <span>Mohammmed Shourov</span></h4>
+    </footer>
+  </body>
+</html>
