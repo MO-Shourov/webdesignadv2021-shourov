@@ -1,0 +1,357 @@
+@keyframes grow{
+  from{width: 45%; height: 0;}
+  to{width: 100%; height: 80vh;}
+}
+:root {
+  /* put var */
+  /* --large: #42454C; */
+  --large: #D9EEE1;
+  --big: #282A35;
+  --mid: #059862;
+  --mid1: #fdfdfd;
+  --small: #EF233C;
+  --small1: #FFF4A3;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body  {
+  background-color: var(--small1);
+}
+header {
+  padding: 1rem;
+  text-align: center;
+  font-size: 1.5rem;
+  background-color: var(--small1);
+  color: #000;
+}
+header a {
+  text-decoration: none;
+  color: var(--mid);
+}
+.fa-phone {
+ color: var(--mid);
+ font-size: 2rem;
+}
+.fa-phone {
+ color: var(--small);
+}
+header a:hover {
+  text-decoration: none;
+  color: var(--small);
+}
+nav {
+  background: var(--big);
+  color: var(--small);
+}
+nav h1 {
+  display: inline-block;
+  padding: 2vh 4vw;
+  color: var(--mid1);
+  font-size: 3rem;
+}
+nav h1 span {
+  color: var(--small1);
+}
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+nav li {
+  display: block;
+  float: right;
+}
+nav li a {
+  display: inline-block;
+  color: var(--mid1);
+  text-decoration: none;
+  padding: 3vh 4vw;
+  font-size: 1.5rem;
+  /* border-right: 1px solid rgba(168, 160, 160, 0.4); */
+  transition: background-color .25s ease-in;
+}
+nav li a:hover {
+  text-decoration: none ;
+  background-color: rgba(211, 211, 211, .4);
+  color: var(--mid);
+}
+.callAction {
+  padding: 10px 20px;
+  margin: auto;
+}
+.callAction button{
+  display: block;
+  text-align: center;
+  margin: auto;
+  max-width: 350px;
+  height: 70px;
+  padding: 0 20px;
+  background-color: var(--small1);
+  /* border: var(--big) 2px solid; */
+  font-size: 1.5rem;
+}
+.callAction button a {
+  display: block;
+  padding: 0;
+  transition: none;
+  color: var(--big);
+}
+.callAction button a:hover {
+  opacity: 0.8;
+  background-color: var(--small);
+  text-decoration: none;
+  color: var(--small1);
+ }
+.callAction button:hover {
+  transform: translateY(7px);
+  text-decoration: none ;
+  opacity: 0.8;
+  background-color: var(--small);
+  color: var(--small1);
+  cursor: pointer;
+}
+.fa-times {
+  float: right;
+  padding: 7px 15px;
+  cursor: pointer;
+}
+.fa-times:hover{
+  color: var(--small);
+}
+footer {
+  background: var(--big);
+  color: #ffffff;
+  padding: 1rem;
+  min-height: 10vh;
+}
+footer h4 {
+  text-align: center;
+  margin: 25px;
+}
+.cover_photo {
+  height: 80vh;
+  margin: auto;
+  padding: 60px;
+  margin-top: none;
+  background: lightgray;
+  background: url(https://www.history.com/.image/t_share/MTU3ODc4Njg1OTI3MDI0MzUx/hungry-history-a-slice-of-history-pizza-through-the-ages-istock_000018675576large-2.jpg);
+  background-position: center;
+  background-size: cover;
+  animation-name: grow;
+  animation-duration: 1s;
+}
+.overlay {
+  padding: 20px;
+  /* background-color: var(--mid); */
+  background-color: rgba(0, 0, 0, 0.63);
+  width: 30%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  border-radius: 1%;
+}
+.overlay h1 {
+  text-align: center;
+  color: #000;
+  padding-top: 15px;
+}
+.overlay img {
+  margin: 0 70px;
+  width: 350px;
+  height: 350px;
+}
+.overlay-inner {
+  color: #fff;
+  text-align: center;
+}
+.overlay-inner p {
+  font-size: 1.5rem;
+}
+.footerVisit{
+  padding-top: 15px;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+}
+.footerVisit h6 {
+  color: #fff;
+  font-size: 2.5rem;
+}
+.footerVisit h6:hover {
+  cursor: pointer;
+}
+.span0 {
+  color: var(--small1);
+}
+header {
+  display: block;
+}
+.hides{
+  display: none;
+}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid var(--big);
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: var(--small);
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  /* border-radius: 4px; */
+  cursor: pointer;
+  font-size: 2rem;
+}
+
+input[type=submit]:hover {
+  background-color: var(--small1);
+  color: var(--big);
+}
+
+.container-order {
+  color: #f2f2f2;
+  border-radius: 5px;
+  background-color: var(--big);
+  padding: 20px;
+  width: 85%;
+  min-height: 600px;
+  margin: auto; 
+  padding-top: 20px;
+}
+.lda {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+.specialD {
+  min-height: 600px;
+  padding: 50px;
+}
+.specialDS {
+  background-color: var(--big);
+  width: 85%;
+  min-height: 500px;
+  margin: auto;
+  border-radius: 15px;
+}
+.specialDSE {
+  display: flex;
+  justify-content: space-between;
+}
+.Cspecial {
+  display: flex;
+}
+.Cspecial h1 {
+  font-size: 3rem;
+  color: #f2f2f2;
+  /* float: left; */
+  padding-left: 200px;
+  /* padding-top: 200px; */
+  margin: auto;
+  text-align: center;
+}
+.Cspecial img {
+  /* padding-right: 300px; */
+  width: 450px;
+  height: 450px;
+}
+hr {
+  width: 65%;
+  margin: auto;
+  background-color: var(--big);
+  color: var(--big) ;
+  border: var(--big) 4px solid;
+}
+.specialDE {
+  background-color: var(--big);
+  width: 85%;
+  min-height: 500px;
+  margin: auto;
+  border-radius: 15px;
+  margin-bottom: 40px;
+  margin-top: 40px;
+  padding-top: 60px;
+  padding-left: 250px;
+}
+
+
+.container2 {
+  padding: 20px;
+  background-color: var(--small1);
+  width: 80%;
+}
+
+.container2 input[type=text], input[type=submit] {
+  width: 100%;
+  padding: 12px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid  var(--big);
+  box-sizing: border-box;
+  background-color: var(--small1);
+}
+
+.container2 input[type=checkbox] {
+  margin-top: 16px;
+  background-color: var(--small1);
+}
+
+.container2 input[type=submit] {
+  background-color: var(--big);
+  color: white;
+  border: none;
+}
+
+.container2 input[type=submit]:hover {
+  opacity: 0.8;
+  background-color: var(--small);
+}
+
+.PizzaShop {
+  margin: 170px;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mosPizza{
+  display: block;
+  background-color: var(--big);
+  min-height: 400px;
+  width: 83%;
+  margin: auto;
+  margin-bottom: 40px;
+}
+.mosPizza h1 {
+  text-align: center;
+  padding: 25px;
+  font-size: 3rem;
+}
+
+.mosPizza hr {
+  width: 65%;
+  margin: auto;
+  background-color: var(--small1);
+  color: var(--small1) ;
+  border: var(--small1) 4px solid;
+}
+
+.mosPizza p {
+  width: 75%;
+  margin: auto;
+  font-size: 1.5rem;
+  color: var(--small1) ;
+  padding: 25px;
+}

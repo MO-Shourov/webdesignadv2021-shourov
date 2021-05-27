@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mo's Pizza</title>
+  <link type="text/css" rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous" />
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous" /> -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+</head>
+
+<body>
+  <header id="headerD">
+    Call Us Now:
+    <a href="tel:+15861112222">(586)-111-2222 <i class="fas fa-phone"></i></a>
+    <i onclick="hideElement()" class="fas fa-times"></i>
+  </header>
+  <!-- Nav -->
+  <nav>
+    <ul>
+      <h1> <span>Mo's</span> Pizza</h1>
+      <li class="callAction">
+        <button id="orderP"><a href="orderpage.html"><span><i class="fas fa-shopping-basket"></i> Order Now</span></a></button>
+        <!-- <a class="orderPage" href="orderpage.html"></a> -->
+      </li>
+      <li>
+        <a href="about.html"><i class="fas fa-user"></i> About Us</a>
+      </li>
+      <li>
+        <a href="pizzamenu.html"><i class="fas fa-bars"></i> Menu</a>
+      </li>
+      <li>
+        <a href="index.html"><i class="fas fa-user"></i> Home</a>
+      </li>
+    </ul>
+  </nav>
+  <div class="lda">
+
+    <div class="container-order">
+      <form action="#">
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+        <label for="lname">Phone Number</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your Phone Number..">
+        
+        <label for="Pizza">Pizza</label>
+        <select id="Pizza" name="Pizza">
+          <option>Chicken Taco</option>
+          <option>Honolulu Hawaiian</option>
+          <option>Cheeseburger</option>
+          <option>Pacific Veggie</option>
+          <option>Philly Cheese Steak</option>
+          <option>Wisconsin 6 Cheese</option>
+        </select>
+        <label for="Pizza">Soda</label>
+        <select id="Pizza" name="Pizza">
+          <option>COKE</option>
+          <option>COKE ZERO</option>
+          <option>COKE DIET</option>
+          <option>SPRITE</option>
+          <option>BOTTLE WATER</option>
+          <option>FANTA ORANGE</option>
+        </select>
+        <label for="Pizza">Dressing & Sauces</label>
+        <select id="Pizza" name="Pizza">
+          <option>Hot Buffalo Dipping</option>
+          <option>Honey BBQ Dipping</option>
+          <option>Ranch</option>
+          <option>Sweet Mango Habanero Sauce</option>
+          <option>Marinara Dipping Sauce</option>
+          <option>Garlic Dipping Sauce</option>
+        </select>
+        
+        <label for="subject">Note</label>
+        <textarea id="subject" name="subject" placeholder="If want to modifiy your order..." style="height:200px"></textarea>
+        
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+    
+  </div>
+  <script src="js/main.js"></script>
+  <footer>
+    <div class="footerVisit">
+      <h5><span class="span0">Visit Us At</span></h5>
+      <h6>
+        <i class="fab fa-twitter-square"></i>
+        <i class="fab fa-google-plus-square"></i>
+        <i class="fab fa-facebook-square"></i>
+        <i class="fab fa-instagram-square"></i>
+      </h6>
+    </div>
+    <h4>Made By <span class="span0">Mohammed Shourov</span></h4>
+  </footer>
+</body>
+
+</html>
